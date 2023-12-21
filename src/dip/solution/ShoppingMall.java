@@ -14,9 +14,11 @@ public class ShoppingMall {
 
     public static void main(String[] args) {
         BankCard creditCard = new CreditCard();
-        creditCard.doTransaction(5000);
+        ShoppingMall shoppingMall = new ShoppingMall(creditCard);
+        shoppingMall.doPurchaseSomething(5000);
 
         BankCard debitCard = new DebitCard();
-        debitCard.doTransaction(1000);
+        ShoppingMall shoppingMall1 = new ShoppingMall(debitCard);
+        shoppingMall1.doPurchaseSomething(5000);
     }
 }
