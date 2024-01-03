@@ -1,13 +1,12 @@
 package ocp;
 
-public class MobileNotificationService implements NotificationServiceI {
+public class MobileNotificationService extends NotificationService {
     @Override
     public void sendOTP(String medium) {
         //do something
     }
 
-    @Override
-    public void sendTransactionReport(String medium) {
+    public void sendPhoneVerification(String medium) {
         //do something
     }
 }

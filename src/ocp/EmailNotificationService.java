@@ -1,13 +1,12 @@
 package ocp;
 
-public class EmailNotificationService implements NotificationServiceI {
+public class EmailNotificationService extends NotificationService {
     @Override
     public void sendOTP(String medium) {
         //do something
     }
 
-    @Override
-    public void sendTransactionReport(String medium) {
+    public void sendEmailTransactionReport(String medium) {
         //do something
     }
 }

@@ -1,13 +1,8 @@
 package ocp;
 
-public class WhatsAppNotification implements NotificationServiceI {
+public class WhatsAppNotification extends NotificationService {
     @Override
     public void sendOTP(String medium) {
-        //do something
-    }
-
-    @Override
-    public void sendTransactionReport(String medium) {
         //do something
     }
 }
